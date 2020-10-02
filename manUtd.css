@@ -1,0 +1,47 @@
+section {
+  position: relative;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  
+  align-items: center;
+  background-image: url("oldTrafford.jpg");
+  background-size: cover;
+}
+
+.shadow
+{
+  text-shadow: 2px 2px 5px red;
+}
+
+h1, p, ul, table
+{
+  opacity: 75%;
+  position: relative;
+  width: 75%;
+  height: 100%;
+  font-family: "verdana", sans-serif;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  margin: 5px;
+  padding: 5px;
+  list-style-type: none;
+}
+
+.expandVertically
+{
+  height: 80%;
+}
+
+.logo
+{
+  width: 30%;
+  height: 100%;
+  vertical-align: middle;
+  z-index: 2;
+}
