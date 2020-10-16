@@ -1,0 +1,79 @@
+h1
+{
+  text-align: center;
+  outline: 2px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 5px cyan;
+}
+
+h2, h3
+{
+  text-align: center;
+  outline: 2px;
+  font-size: 30px;
+  color: cyan;
+  text-shadow: 2px 2px 5px orange;
+  padding: 0px 0;
+  margin: 0px;
+}
+
+body
+{
+  font-family: fantasy;
+  position: relative;
+  margin: 0px;
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  color: orange;
+  align-items: center;
+  background-image: url("deathstar.jpg");
+  background-size: cover;
+}
+
+.intro
+{
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0px;
+}
+
+.summary
+{
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0px;
+}
+
+.main
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  grid-template-rows: 40%;
+  padding: 50px;
+  margin: 30px;
+}
+
+footer
+{
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+}
+
+
+.wrapper
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0px;
+  margin: 30px;
+}
