@@ -1,3 +1,18 @@
+/* Set defaults for everything */
+*
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Set up background in body*/
+body {
+  background-image: url("oldTrafford.jpg");
+  background-size: cover;
+}
+
+/* Align everything in section */
 section {
   position: relative;
   margin: 0px;
@@ -5,19 +20,18 @@ section {
   flex-direction: column;
   text-align: center;
   vertical-align: middle;
-  height: 100%;
-  
+  height: 100%; 
   align-items: center;
-  background-image: url("oldTrafford.jpg");
-  background-size: cover;
 }
 
+/* Create text shadow */
 .shadow
 {
   text-shadow: 2px 2px 5px red;
 }
 
-h1, p, ul, table
+/* Styke headers, lists, and tables */
+h1, p, ul, table, h2
 {
   opacity: 75%;
   position: relative;
@@ -33,15 +47,76 @@ h1, p, ul, table
   list-style-type: none;
 }
 
+/* Expand vertically (for when needed) */
 .expandVertically
 {
-  height: 80%;
+  height: 100%;
 }
 
+/* Format logo */
 .logo
 {
   width: 30%;
   height: 100%;
   vertical-align: middle;
   z-index: 2;
+}
+
+/* Box for the game to be played inside */
+.game
+{
+  /* Set dimensions */
+    width: 500px;
+    height: 200px;
+    border: 10px solid red;
+    margin: auto;
+}
+
+/* Properties of the fred the red character */
+#fred
+{
+  /* Set dimensions */
+    width: 40px;
+    height: 50px;
+    /* Apply background */
+    background-image: url("fred.png");
+    background-size: cover;
+    position: relative;
+    top: 150px;
+}
+
+/* Ensure smooth animation */
+.animate
+{
+    animation: hop 0.25s linear;
+}
+
+/* Set dimenstions for the hop mechanic */
+@keyframes hop
+{
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+
+/* Properties of flying liverpool badge */
+#liverpool
+{
+    background-image: url("liverpool.png");
+    background-size: cover;
+    /* Set dimensions */
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: shell 1s infinite linear;
+}
+
+/* Set dimensions for the shell mechanic (i.e. sliding liverpool badge) */
+@keyframes shell
+{
+  0%{left: 500px}
+  100%{left: -20px}
 }
