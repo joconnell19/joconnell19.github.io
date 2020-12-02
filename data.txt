@@ -47,6 +47,4 @@
           <td>FIFA Club World Cup</td>
           <td>1</td>
         </tr>
-        
-
-      </table>
+</table>
